@@ -1,29 +1,33 @@
-OpenWrt package feed for mtpoe-ctrl (MikroTik PoE controller)
+# openwrt-mtpoe-feed
+
+OpenWrt package feed for mtpoe-ctrl (MikroTik PoE controller).
+
+## Description
 
 This feed provides the mtpoe-ctrl package for OpenWrt.
 Target device: MikroTik RB5009UPr+S+IN
 
-USAGE
+## Usage
+
 Add to feeds.conf.default:
 
-src-git mtpoe https://github.com/Sm00shed/openwrt-mtpoe-feed.git
-
+    src-git mtpoe https://github.com/Sm00shed/openwrt-mtpoe-feed.git
 
 Then:
 
-./scripts/feeds update mtpoe
+    ./scripts/feeds update mtpoe
+    ./scripts/feeds install mtpoe-ctrl
 
-./scripts/feeds install mtpoe-ctrl
+## Credits
 
-CREDITS
-adron-s  - Original author of mtpoe_ctrl, relicensed to GPL-2.0
+- [adron-s](https://github.com/adron-s) - Original author of mtpoe_ctrl, relicensed to GPL-2.0
+- [prudy](https://github.com/prudy) - RB5009UPr adaptations
+- [Nerdleben](https://github.com/Sm00shed) - Initiated relicensing to GPL-2.0, feed repo, testing
 
-prudy    - RB5009UPr adaptations
+## Source
 
-Sm00shed - Initiated relicensing to GPL-2.0, feed repo, testing
-
-SOURCE
 https://github.com/adron-s/mtpoe_ctrl
 
-LICENSE
+## License
+
 GPL-2.0
