@@ -5,10 +5,12 @@ Target device: MikroTik RB5009UPr+S+IN
 
 USAGE
 Add to feeds.conf.default:
+
 src-git mtpoe https://github.com/Sm00shed/openwrt-mtpoe-feed.git
 
 
 Then:
+
 ./scripts/feeds update mtpoe
 
 ./scripts/feeds install mtpoe-ctrl
