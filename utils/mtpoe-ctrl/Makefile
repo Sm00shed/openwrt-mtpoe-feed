@@ -17,7 +17,6 @@ PKG_MIRROR_HASH:=4e4b626dae30c6fc0479d2ece665ecf7df6bcd1060b6eadf64f7358cf1677f3
 
 PKG_MAINTAINER:=Sergey Sergeev <adron@yapic.net>
 PKG_LICENSE:=GPL-2.0-only
-PKG_LICENSE_FILES:=LICENSE
 
 include $(INCLUDE_DIR)/package.mk
 
