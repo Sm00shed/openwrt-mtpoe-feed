@@ -1,22 +1,23 @@
 #
 # Copyright (C) 2018 adron@yapic.net
 #
+# This is free software, licensed under the GNU General Public License v2.
+#
 
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=mtpoe-ctrl
-PKG_SOURCE_VERSION:=af70c301fffc426cee456d8f03f3a172640d7ec1
-PKG_MIRROR_HASH:=4e4b626dae30c6fc0479d2ece665ecf7df6bcd1060b6eadf64f7358cf1677f36
 PKG_VERSION:=1.15
-PKG_RELEASE:=18
+PKG_RELEASE:=1
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL:=https://github.com/adron-s/mtpoe_ctrl
-PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
-PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
+PKG_SOURCE_VERSION:=af70c301fffc426cee456d8f03f3a172640d7ec1
+PKG_MIRROR_HASH:=4e4b626dae30c6fc0479d2ece665ecf7df6bcd1060b6eadf64f7358cf1677f36
 
 PKG_MAINTAINER:=Sergey Sergeev <adron@yapic.net>
-PKG_LICENSE:=GPL-2.0
+PKG_LICENSE:=GPL-2.0-only
+PKG_LICENSE_FILES:=LICENSE
 
 include $(INCLUDE_DIR)/package.mk
 
@@ -24,12 +25,13 @@ define Package/mtpoe-ctrl
   SECTION:=utils
   CATEGORY:=Utilities
   DEPENDS:=+libuci +kmod-spi-dev
-  TITLE:=Management utility for Mikrotiks PoE V2/V3/V4
+  TITLE:=Management utility for MikroTik PoE V2/V3/V4
   URL:=$(PKG_SOURCE_URL)
 endef
 
 define Package/mtpoe-ctrl/description
-	Management utility for Mikrotiks PoE V2/V3/V4
+  Controls PoE output ports on MikroTik RB5009UPr via SPI interface.
+  Supports PoE protocol V2/V3/V4.
 endef
 
 define Package/mtpoe-ctrl/install
