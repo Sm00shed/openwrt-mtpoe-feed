@@ -22,7 +22,7 @@ Then:
 
 - [adron-s](https://github.com/adron-s) - Original author of mtpoe_ctrl, relicensed to GPL-2.0
 - [prudy](https://github.com/prudy) - RB5009UPr adaptations
-- [Nerdleben](https://github.com/Sm00shed) - Initiated relicensing to GPL-2.0, feed repo, testing
+- [Sm00shed](https://github.com/Sm00shed) - Initiated relicensing to GPL-2.0, feed repo, testing
 
 ## Source
 
